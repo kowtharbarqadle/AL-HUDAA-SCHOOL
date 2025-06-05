@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sunrise School - Admissions Section</title>
+<style>
+    /* General body styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+
+    /* Admissions Section styling */
+    .section {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        background-color: white;
+        margin: 20px auto;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 900px;
+    }
+
+    /* Small image on left */
+    .section img {
+        flex: 0 0 200px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* Content area */
+    .section-content {
+        flex: 1;
+    }
+
+    .section-content h2 {
+        color: #004080;
+        margin-top: 0;
+    }
+
+    .section-content ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Table styling */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid #004080;
+    }
+
+    th {
+        background-color: #004080;
+        color: white;
+        padding: 8px;
+        text-align: left;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .section {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .section img {
+            flex: none;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Admissions Section -->
+<section id="admissions" class="section">
+    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc" alt="Admissions Process" />
+    <div class="section-content">
+        <h2>Admissions</h2>
+
+        <h3>Admission Steps (List)</h3>
+        <ul>
+            <li>Collect application form online or from the admin office.</li>
+            <li>Submit required documents (birth certificate, previous reports, etc.).</li>
+            <li>Take an entrance assessment (for Grades 2 and above).</li>
+            <li>Attend parent-student interview session.</li>
+        </ul>
+
+        <h3>Admission Details (Table)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Collect application form online or from the admin office.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Submit required documents (birth certificate, previous reports, etc.).</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Take an entrance assessment (for Grades 2 and above).</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Attend parent-student interview session.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Contact us for more information about fees, scholarships, and important dates.</p>
+    </div>
+</section>
+
+</body>
+</html>

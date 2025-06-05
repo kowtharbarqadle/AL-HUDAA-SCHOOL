@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sunrise School</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px;
+            background-color: #f0f0f0;
+        }
+
+        /* Fixed Header and Navigation */
+        header {
+            background-image: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 18px;
+            margin-right: 40px;
+        }
+
+        .nav-links li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Section Styling */
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            background-color: white;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 1200px;
+        }
+
+        .section img {
+            flex: 1 1 40%;
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .section-content {
+            flex: 1 1 55%;
+            margin-left: 50px;
+        }
+
+        .section h2 {
+            color: #004080;
+            margin-top: 0;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .section ul {
+            margin-left: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-image: url('https://images.unsplash.com/photo-1495567720989-cebdbdd97913');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+                background-color: rgba(0,0,0,0.8);
+                padding: 10px;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+        <h1 class="logo">Sunrise School</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <!-- Sawirka Home: School Building -->
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754" alt="School Building" />
+        <div class="section-content">
+            <h2>Welcome to Sunrise School</h2>
+            <p>
+                Sunrise School is a place where students grow into future leaders. We emphasize holistic development through academics, sports, and moral values.
+                With top-tier faculty and facilities, we make sure each student is prepared to succeed in life.
+            </p>
+            <p>
+                Our vision is to create a nurturing environment where every learner can achieve academic excellence, develop life skills, and become a responsible citizen of the world.
+            </p>
+            <!-- Sawirka wuxuu muujinayaa muuqaalka iskuulka taasoo la jaanqaadaysa soo dhaweynta iyo himilada iskuulka -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <!-- Sawirka About: Classroom Activity -->
+        <img src="https://images.unsplash.com/photo-1601582581839-dfbd6c9925f9" alt="Classroom Activity" />
+        <div class="section-content">
+            <h2>About Us</h2>
+            <p>
+                Founded in 2001, Sunrise School has been a pillar of quality education in the region. Our curriculum balances theory and practice, with extracurriculars ranging from robotics to literature clubs.
+            </p>
+            <p>
+                We believe in continuous growth—for both students and teachers. Regular training, seminars, and workshops keep our staff up-to-date with the latest educational trends.
+            </p>
+            <!-- Sawirka wuxuu muujinayaa hawlaha waxbarasho ee fasalka taasoo ku habboon qoraalka ku saabsan barnaamijka waxbarashada -->
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="section">
+        <!-- Sawirka Admissions: Admission Process -->
+        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc" alt="Admissions Process" />
+        <div class="section-content">
+            <h2>Admissions</h2>
+            <p>
+                We welcome students from diverse backgrounds. Our admission process is simple, inclusive, and based on merit and potential.
+            </p>
+            <ul>
+                <li>Collect application form online or from the admin office.</li>
+                <li>Submit required documents (birth certificate, previous reports, etc.).</li>
+                <li>Take an entrance assessment (for Grades 2 and above).</li>
+                <li>Attend parent-student interview session.</li>
+            </ul>
+            <p>Contact us for more information about fees, scholarships, and important dates.</p>
+            <!-- Sawirka wuxuu muujinayaa marxaladaha gelitaanka ardayda si waafaqsan qoraalka -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <!-- Sawirka Contact: School Contact Desk -->
+        <img src="https://images.unsplash.com/photo-1520975922071-43aef256e4b4" alt="School Contact Desk" />
+        <div class="section-content">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> info@sunriseschool.edu</p>
+            <p><strong>Phone:</strong> +252 610100103</p>
+            <p><strong>Address:</strong> Sixth Section, Baledhawo, Somalia</p>
+            <p>Follow us on social media for updates and school events!</p>
+            <!-- Sawirka wuxuu muujinayaa xarunta xiriirka iskuulka oo la jaanqaadaysa macluumaadka -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sunrise School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
